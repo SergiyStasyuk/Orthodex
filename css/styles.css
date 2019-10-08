@@ -48,8 +48,60 @@ header a {
 	justify-content: space-between;
 	align-items: center;
 	margin: 40px 0;
+	flex-wrap: wrap;
 }
 
 .menu-flex li:hover {
 	text-decoration: underline;
 }
+
+.header-button {
+	border:none;     
+	outline: none;
+	padding: 15px 50px;
+	background: #006ce1;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	border-radius: 20px;
+	cursor:pointer;
+}
+
+li.header-menu-button:hover {
+	text-decoration: none;
+	transform: scale(1.01);
+}
+
+@media screen and (max-width: 992px) {
+	.menu-flex {
+		margin: 30px 0;
+	}
+
+	.header-button {
+		padding: 7px 10px;
+	}
+
+	header a {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header a {
+		font-size: 12px;
+		margin-right: 10px;
+	}
+
+	.menu-flex {
+		justify-content: center;
+	}
+
+	.menu-flex li:nth-child(5) {
+		flex-basis: 100%;
+}
+
+	.menu-flex li:nth-child(6) {
+		flex-basis: 100%;
+	}
+}
+
