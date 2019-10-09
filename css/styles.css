@@ -25,6 +25,15 @@ a {
     transition: all .3s linear;
 }
 
+header {
+	position: fixed;
+    width: 100%;
+    background: #fff;
+    top:0;
+    left: 0;
+    z-index: 2;
+}
+
 header a {
 	color: #333333;
 	text-decoration: none;
@@ -98,10 +107,23 @@ li.header-menu-button:hover {
 
 	.menu-flex li:nth-child(5) {
 		flex-basis: 100%;
+		margin-left: calc(48% - 81px);
+		margin-right: calc(48% - 81px);
+	    margin-top: 15px;
+	    margin-bottom: 15px;
 }
 
 	.menu-flex li:nth-child(6) {
 		flex-basis: 100%;
+		margin-left: calc(48% - 57px);
+		margin-right: calc(48% - 57px);
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.menu-flex > :not(:last-child) {
+		display: none;
 	}
 }
 
