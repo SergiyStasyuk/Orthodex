@@ -78,7 +78,7 @@ header a {
 
 li.header-menu-button:hover {
 	text-decoration: none;
-	transform: scale(1.01);
+	transform: scale(1.11);
 }
 
 @media screen and (max-width: 992px) {
@@ -125,5 +125,32 @@ li.header-menu-button:hover {
 	.menu-flex > :not(:last-child) {
 		display: none;
 	}
+}
+
+.banner {
+	background-image: url(../images/main-background.jpg);
+	background-color: #005a9b;
+	background-position: center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 100px;
+	height: 1000px;
+	padding: 10px 0;
+}
+
+.banner h1 {
+	font-size: 50px;
+    color: #fff;
+    text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000, 3px 3px 3px rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.banner-description {
+	font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px #000000, 1px -1px #000000, -1px 1px #000000, -1px -1px #000000, 3px 3px 3px rgb(0, 0, 0);
+    text-align: center;
 }
 
